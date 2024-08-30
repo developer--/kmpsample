@@ -1,0 +1,13 @@
+getCurrentUser:
+SELECT * FROM User LIMIT 1;
+
+updateUser:
+INSERT OR REPLACE INTO User
+VALUES ?;
+
+clearTable:
+DELETE FROM User;
+
+saveUser:
+INSERT OR REPLACE INTO User
+VALUES ?;

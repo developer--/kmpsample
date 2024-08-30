@@ -1,0 +1,84 @@
+[versions]
+## SDK Versions
+firebaseCrashlyticsGradle = "3.0.2"
+googleServices = "4.4.2"
+gradle = "8.5.2"
+junit = "4.13.2"
+koinGradlePlugin = "3.4.0"
+kotlinSerialization = "1.9.22"
+ktorVersion = "2.3.7"
+mockkCommon = "1.12.5"
+multiplatformSettingsNoArg = "0.9"
+navigationSafeArgsGradlePlugin = "2.7.7"
+serializationVersion = "1.6.2"
+
+# Dependencies
+kotlin = "1.9.22"
+kmmBridge = "0.5.7"
+android-gradle-plugin = "8.2.2"
+coroutines = "1.8.1"
+kotlinx-datetime = "0.6.0"
+
+skie = "0.8.4"
+
+sqlDelight = "2.0.1"
+
+# Sample - Android
+androidx-core = "1.13.1"
+koin = "3.5.6"
+
+
+[libraries]
+androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationSafeArgsGradlePlugin" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gradle-plugin = { module = "app.cash.sqldelight:gradle-plugin", version.ref = "sqlDelight" }
+junit = { module = "junit:junit", version.ref = "junit" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-gradle-plugin = { module = "io.insert-koin:koin-gradle-plugin", version.ref = "koinGradlePlugin" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinSerialization" }
+kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlinSerialization" }
+kotlinx-dateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "serializationVersion" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationVersion" }
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorVersion" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorVersion" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorVersion" }
+ktor-client-ios = { module = "io.ktor:ktor-client-ios", version.ref = "ktorVersion" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorVersion" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorVersion" }
+ktor-client-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorVersion" }
+ktor-client-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorVersion" }
+
+ktor-ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktorVersion" }
+mockk-common = { module = "io.mockk:mockk-common", version.ref = "mockkCommon" }
+multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettingsNoArg" }
+multiplatform-settings-test = { module = "com.russhwolf:multiplatform-settings-test", version.ref = "multiplatformSettingsNoArg" }
+
+primitive-adapters = { module = "app.cash.sqldelight:primitive-adapters", version.ref = "sqlDelight" }
+sqlDelight-android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+sqlDelight-coroutinesExt = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
+sqlDelight-native = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+sqlDelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+
+
+# Sample - Android
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+
+sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+sqlDelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
+kmmbridge = { id = "co.touchlab.kmmbridge", version.ref = "kmmBridge" }
+
+[bundles]
+

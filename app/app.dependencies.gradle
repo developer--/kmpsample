@@ -1,0 +1,19 @@
+//file:noinspection DependencyNotationArgument
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(project(":kmp:core"))
+
+    implementation lib.kotlinStd
+    implementation lib.appcompat
+    implementation lib.coreKtx
+
+    //koin
+    implementation lib.koinAndroid
+    testImplementation lib.kointest
+    testImplementation lib.koinTestJunit4
+
+    //robolectric
+    testImplementation lib.robolectric
+    //junit
+    testImplementation lib.junit
+}

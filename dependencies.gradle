@@ -1,0 +1,32 @@
+ext {
+    // General
+    androidMinSdkVersion = 23
+    androidTargetSdkVersion = 34
+    androidCompileSdkVersion = 34
+    
+    verCode = 1
+    verName = "1.0.0"
+    // Versions
+    kotlin_version = '1.9.22'
+    appcompatVersion = "1.6.1"
+    koin_version = "3.5.6"
+    coreKtxVersion = "1.13.1"
+    mockkVersion = "1.13.3"
+    coroutineVersion = "1.8.1"
+    junitVersion = "4.13.2"
+    robolectricVersion = "4.8.1"
+
+    lib = [
+            kotlinStd              : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            appcompat              : 'androidx.appcompat:appcompat:' + appcompatVersion,
+            coreKtx                : 'androidx.core:core-ktx:' + coreKtxVersion,
+            coroutineCore          : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion",
+            koinAndroid            : "io.insert-koin:koin-android:$koin_version",
+            kointest               : "io.insert-koin:koin-test:$koin_version",// Koin testing tools
+            koinTestJunit4         : "io.insert-koin:koin-test-junit4:$koin_version", // Needed JUnit version
+            mockk                  : "io.mockk:mockk:$mockkVersion",
+            coroutinesTest         : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutineVersion",
+            robolectric            : "org.robolectric:robolectric:$robolectricVersion",
+            junit                  : 'junit:junit:' + junitVersion
+    ]
+}

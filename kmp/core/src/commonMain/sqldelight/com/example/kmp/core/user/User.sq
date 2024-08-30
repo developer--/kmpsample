@@ -1,0 +1,16 @@
+import kotlin.Boolean;
+import kotlin.String;
+import kotlin.collections.List;
+
+CREATE TABLE IF NOT EXISTS User (
+    userId TEXT NOT NULL,
+    firstName TEXT,
+    lastName TEXT,
+    isLoggedIn INTEGER AS Boolean DEFAULT 0 NOT NULL,
+    accessToken TEXT NOT NULL,
+    permissions TEXT AS List<String> NOT NULL,
+    hasCalendarDataDownloaded INTEGER AS Boolean DEFAULT 0 NOT NULL,
+    selectedSystemIds TEXT AS List<String>,
+    hasSystemSelected INTEGER AS Boolean DEFAULT 0 NOT NULL,
+    PRIMARY KEY(userId)
+);
